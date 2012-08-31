@@ -34,11 +34,11 @@ class WordPress {
         // Set datetime for post
         if ($date == Null) {
             $post_date = date("Ymd\TH:i:s", time());
-            xmlrpc_set_type($post_date, 'datetime');
         }
         else {
             $post_date = $date;
         }
+        xmlrpc_set_type($post_date, 'datetime');
         
         $params = array(
             $this->blogid,
