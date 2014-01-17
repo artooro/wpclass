@@ -12,4 +12,4 @@
 
 * PHP-XMLRPC
 * Wordpress 3.4
-* PHP 5.? - Only tested with PHP 5.3.10
+* PHP 5.? - Only tested with PHP 5.3.10, PHP 5.4.x
