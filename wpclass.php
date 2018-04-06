@@ -25,8 +25,6 @@ class WordPress {
         curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, TRUE);
         
         $response = curl_exec($this->ch);
-        echo "|";
-        Helper::dump($response);
         
         $result = xmlrpc_decode($response);
         if (is_array($result) && xmlrpc_is_fault($result)) {
